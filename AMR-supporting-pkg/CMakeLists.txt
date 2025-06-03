@@ -205,3 +205,6 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+add_executable(send_request src/send_request.py)
+target_link_libraries(send_request ${catkin_LIBRARIES})

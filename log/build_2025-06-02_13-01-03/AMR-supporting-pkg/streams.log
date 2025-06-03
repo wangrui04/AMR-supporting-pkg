@@ -1,0 +1,33 @@
+[0.007s] Invoking command in '/home/ubuntu/ros2_ws/src/AMR-supporting-pkg/build/AMR-supporting-pkg': /usr/bin/cmake /home/ubuntu/ros2_ws/src/AMR-supporting-pkg/AMR-supporting-pkg -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/src/AMR-supporting-pkg/install/AMR-supporting-pkg
+[0.089s] -- The C compiler identification is GNU 11.4.0
+[0.150s] -- The CXX compiler identification is GNU 11.4.0
+[0.156s] -- Detecting C compiler ABI info
+[0.243s] -- Detecting C compiler ABI info - done
+[0.251s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.251s] -- Detecting C compile features
+[0.251s] -- Detecting C compile features - done
+[0.254s] -- Detecting CXX compiler ABI info
+[0.351s] -- Detecting CXX compiler ABI info - done
+[0.357s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.358s] -- Detecting CXX compile features
+[0.358s] -- Detecting CXX compile features - done
+[0.366s] -- Configuring incomplete, errors occurred!
+[0.366s] See also "/home/ubuntu/ros2_ws/src/AMR-supporting-pkg/build/AMR-supporting-pkg/CMakeFiles/CMakeOutput.log".
+[0.366s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[0.366s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.366s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.366s]   CMake did not find one.
+[0.367s] 
+[0.367s]   Could not find a package configuration file provided by "catkin" with any
+[0.367s]   of the following names:
+[0.367s] 
+[0.367s]     catkinConfig.cmake
+[0.367s]     catkin-config.cmake
+[0.367s] 
+[0.367s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.367s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.367s]   provides a separate development package or SDK, be sure it has been
+[0.367s]   installed.
+[0.367s] 
+[0.367s] [0m
+[0.368s] Invoked command in '/home/ubuntu/ros2_ws/src/AMR-supporting-pkg/build/AMR-supporting-pkg' returned '1': /usr/bin/cmake /home/ubuntu/ros2_ws/src/AMR-supporting-pkg/AMR-supporting-pkg -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/src/AMR-supporting-pkg/install/AMR-supporting-pkg
