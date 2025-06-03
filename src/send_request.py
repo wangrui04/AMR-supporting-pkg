@@ -6,13 +6,16 @@ import numpy as np
 def send_request():
     print("[DEBUG] initialising ROS node...")
     rospy.init_node('send_request_node')
+    print("[DEBUG] waiting for service...") 
     rospy.wait_for_service('/visualize_suggestion')
-    print("visualizing suggestion...")
+    print("[INFO] Service /visualize_suggestion is available.")
+
     try:
+        print("[DEBUG] creating service proxy...")
         visualize = rospy.ServiceProxy('/visualize_suggestion', ExecuteTraj)
         
         # Create a request object
-        print("creating a request...")
+        print("[DEBUG] creating a request...")
         request = ExecuteTrajRequest()
         request.ctrl_points = []
         
@@ -21,7 +24,7 @@ def send_request():
         end_x, end_y = 0.855,0.925
 
         # Generate control points
-        print("generating control points...")
+        print("[DEBUG] generating control points...")
         x_values = np.linspace(start_x, end_x, N)
         y_values = np.linspace(start_y, end_y, N)
 
@@ -32,7 +35,7 @@ def send_request():
         request.control_points = control_points
         
         # Call the service
-        print("calling the service")
+        print("[DEBUG] calling the service")
         response = visualize(request)
         
         # Print the response
